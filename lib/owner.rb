@@ -11,7 +11,9 @@ class Owner
     @cats = []
   end
 
-
+  def add_dog
+    @dogs << Dog.new 
+  end
 
   def say_species
     return "I am a #{@species}."
