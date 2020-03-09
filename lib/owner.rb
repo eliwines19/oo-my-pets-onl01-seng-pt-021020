@@ -50,7 +50,7 @@ class Owner
   end
 
   def list_pets
-    puts "I have #{self.dogs.length} dog(s), and #{self.cats.length} cat(s)."
+    return "I have #{self.dogs.length} dog(s), and #{self.cats.length} cat(s)."
   end
 
 
