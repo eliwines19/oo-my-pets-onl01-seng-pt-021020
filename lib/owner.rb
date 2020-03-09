@@ -33,7 +33,7 @@ class Owner
     Cat.all.each {|cat| cat.mood = "happy" if cat.owner == self}
   end
 
-  def sell_pets 
+  def sell_pets
     Dog.all.each do |dog|
       if dog.owner == self
         dog.mood = "nervous"
@@ -50,7 +50,7 @@ class Owner
   end
 
   
-      
+
 
   def say_species
     return "I am a #{@species}."
