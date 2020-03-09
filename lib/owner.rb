@@ -7,15 +7,10 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
-  end
-
-  def cats
     @cats = []
-  end
-
-  def dogs
     @dogs = []
   end
+
 
   def buy_cat(cat_name)
     @cats << Cat.new(cat_name)
