@@ -9,7 +9,7 @@ class Owner
     @@all << self
   end
 
-  def cats 
+  def cats
     Cat.all.select {|cat| cat.owner = self}
   end
 
