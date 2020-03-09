@@ -13,8 +13,8 @@ class Owner
     return "I am a #{@species}."
   end
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
 
 end
