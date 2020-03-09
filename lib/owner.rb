@@ -11,7 +11,7 @@ class Owner
     @cats = []
   end
 
-  
+
 
   def say_species
     return "I am a #{@species}."
