@@ -20,7 +20,7 @@ class Owner
   def buy_cat(cat_name)
     @cats << Cat.new(cat_name)
   end
-    
+
 
   def say_species
     return "I am a #{@species}."
