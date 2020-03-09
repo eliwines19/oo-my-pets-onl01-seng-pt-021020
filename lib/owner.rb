@@ -25,6 +25,9 @@ class Owner
     Dog.new(dog_name, self)
   end
 
+  def walk_dogs 
+  end
+
   def say_species
     return "I am a #{@species}."
   end
