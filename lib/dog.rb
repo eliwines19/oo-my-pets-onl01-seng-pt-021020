@@ -16,5 +16,5 @@ class Dog
     @@all
   end
   #returns the instances of dogs that have been created 
-  
+
 end
