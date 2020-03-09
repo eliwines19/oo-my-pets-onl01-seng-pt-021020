@@ -33,6 +33,8 @@ class Owner
     Cat.all.each {|cat| cat.mood = "happy" if cat.owner == self}
   end
 
+  
+
   def say_species
     return "I am a #{@species}."
   end
