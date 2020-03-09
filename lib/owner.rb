@@ -13,10 +13,9 @@ class Owner
     Cat.all.select {|cat| cat.owner == self }
   end
 
-  def buy_cat(cat_name)
-    @pets[:cats] << Cat.new(cat_name)
+  def dogs 
+    Dog.all.select {|dog| dog.owner == self}
   end
-
 
   def say_species
     return "I am a #{@species}."
