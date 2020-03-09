@@ -3,12 +3,15 @@ class Owner
   attr_accessor :pets
   attr_reader :name, :species
 
-  def initialize(name, pets = {:dogs => [], :cats => []})
+  def initialize(name)
     @name = name
     @species = "human"
     @@all << self
   end
 
+  def cats 
+    Cat.all.select {|cat| cat.owner = self}
+  end
 
   def buy_cat(cat_name)
     @pets[:cats] << Cat.new(cat_name)
