@@ -29,7 +29,7 @@ class Owner
     Dog.all.each {|dog| dog.mood = "happy" if dog.owner == self}
   end
 
-  def feed_cats 
+  def feed_cats
     Cat.all.each {|cat| cat.mood = "happy" if cat.owner == self}
   end
 
