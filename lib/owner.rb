@@ -12,7 +12,7 @@ class Owner
   end
 
   def add_dog
-    @dogs << Dog.new 
+    @dogs << Dog.new
   end
 
   def say_species
