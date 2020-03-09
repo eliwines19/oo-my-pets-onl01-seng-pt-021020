@@ -9,7 +9,7 @@ class Owner
     @@all << self
   end
 
-  def cats 
+  def cats
     @cats = []
   end
 
