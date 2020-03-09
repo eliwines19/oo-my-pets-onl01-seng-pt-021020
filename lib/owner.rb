@@ -16,12 +16,12 @@ class Owner
   def cats
     Cat.all.select {|cat| cat.owner == self }
   end
-  #returns a collection of all the cats that belong to the owner 
+  #returns a collection of all the cats that belong to the owner
 
   def dogs
     Dog.all.select {|dog| dog.owner == self}
   end
-  #returns a collection of all the dogs that belong to the owner 
+  #returns a collection of all the dogs that belong to the owner
 
   def buy_cat(cat_name)
     Cat.new(cat_name, self)
@@ -63,12 +63,12 @@ class Owner
   def list_pets
     return "I have #{self.dogs.length} dog(s), and #{self.cats.length} cat(s)."
   end
-  #This method lists the amount of pets the owner currently has 
+  #This method lists the amount of pets the owner currently has
 
   def say_species
     return "I am a #{@species}."
   end
-  #This method will say the owners species 
+  #This method will say the owners species
 
   def self.all
     @@all
