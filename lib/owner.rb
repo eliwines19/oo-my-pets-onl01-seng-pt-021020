@@ -7,12 +7,15 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
-    @dogs = []
+  end
+
+  def cats 
     @cats = []
   end
 
-  
-
+  def dogs
+    @dogs = []
+  end
 
   def say_species
     return "I am a #{@species}."
